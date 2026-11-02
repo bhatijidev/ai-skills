@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+ms-playwright/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Video renders & temporary caches
+*.mp4
+*.webm
+*.mov
+snapshots/
+renders/
+.hyperframes/
+
+# OS
+.DS_Store
+Thumbs.db

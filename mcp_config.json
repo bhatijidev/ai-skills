@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_GITHUB_TOKEN>"
+      }
+    },
+    "shadcn-ui": {
+      "command": "npx",
+      "args": ["-y", "@sherifbutt/shadcn-ui-mcp-server"]
+    },
+    "rea": {
+      "command": "npx",
+      "args": ["-y", "rea-agents", "mcp"]
+    },
+    "crawl4ai": {
+      "command": "python",
+      "args": ["-m", "mcp_crawl4ai"]
+    },
+    "browseros-neo": {
+      "serverUrl": "http://127.0.0.1:9010/mcp"
+    }
+  }
+}
